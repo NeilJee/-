@@ -1,0 +1,40 @@
+.content_section{
+	position: relative;
+	/*width: 1000px;*/
+}
+.dm_show_area{
+	position: absolute;
+	/*border: 1px solid #000;*/
+	height: 200px;
+	width: 800px;
+	top: 0;
+	left: 0px;
+	overflow: hidden;
+}
+.dm_item{
+	/*border: 1px solid #000;*/
+	width: 100%;
+	position: absolute;
+	left: 100%;
+	font-size: 24px;
+	color: #ff0000;
+	font-weight: bold;
+	/*overflow: hidden;*/
+}
+.dm_item_move{
+	animation:dm_item_move 8s;
+	animation-timing-function:linear;
+}
+.video_container{
+	position: relative;
+}
+
+@keyframes dm_item_move
+{
+from {left:100%;
+		width: 100%;
+}
+to {left: -200px;
+width: 100%;
+}
+}
